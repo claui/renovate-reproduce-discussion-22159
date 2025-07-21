@@ -1,4 +1,4 @@
-# 22159
+# 37087
 
 ## Current behavior
 
@@ -23,4 +23,4 @@ Those ancient versions should have been ignored, because:
 
 ## Link to the Renovate issue or Discussion
 
-https://github.com/renovatebot/renovate/discussions/22159
+https://github.com/renovatebot/renovate/discussions/37087
