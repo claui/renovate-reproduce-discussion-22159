@@ -1,17 +1,26 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 22159
 
 ## Current behavior
 
-Explain the current behavior here.
+Renovate attempts to update:
+
+- the `commons-io` package to an ancient version `20030203.*`, and
+
+- the `commons-collections` package to the ancient version `20040616`.
+
+For a detailed writeup, see https://github.com/renovatebot/renovate/discussions/22159#discussion-5190942.
 
 ## Expected behavior
 
-Explain the expected behavior here.
+Those ancient versions should have been ignored, because:
+
+1. these libraries are so widely used and the user can expect an OOBE
+   without hiccups like these; and
+
+2. the
+   [web interface on MVN Repository](https://mvnrepository.com/artifact/commons-io/commons-io)
+   also manages to sort the ancient versions correctly.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/22159
